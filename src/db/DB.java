@@ -11,7 +11,7 @@ public class DB {
 
 	// 1. Método auxiliar para carregar as propriedades do arquivo db.properties
 	private static Properties loadProperties() {
-		try (FileInputStream fs = new FileInputStream("db.properties")) { // Abre o arquivo
+		try (FileInputStream fs = new FileInputStream("src/db/db.properties")) { // Abre o arquivo
 			Properties props = new Properties(); // Cria o objeto Properties
 			props.load(fs); 				// Carrega os dados do arquivo	
 			return props; 					// Retorna os dados carregados
